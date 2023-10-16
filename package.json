@@ -1,12 +1,14 @@
 {
   "name": "react-typescript",
+  "homepage": "./",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "githubpages": "rm -rf build && rm -rf docs && npm run build && mv build docs && git add docs/* && git commit -m \"Publish in GitHub Pages\" && git push"
   },
   "dependencies": {
     "@types/lodash": "^4.14.199",
